@@ -1,4 +1,4 @@
-
+import { AntdRegistry } from '@ant-design/nextjs-registry';
 
 
 export default function RootLayout({
@@ -9,7 +9,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
+        <AntdRegistry>
+
         {children}
+        </AntdRegistry>
       </body>
     </html>
   );
